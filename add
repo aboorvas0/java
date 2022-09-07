@@ -1,0 +1,45 @@
+
+import java.io.*;
+import java.lang.*;
+class add 
+		
+{	
+   
+   int a,b,c;
+	void input() throws Exception
+	{
+		
+		DataInputStream d=new DataInputStream(System.in);
+		System.out.println("enter a");
+	    a=Integer.parseInt(d.readLine());
+		System.out.println("enter b");
+		 b=Integer.parseInt(d.readLine());
+		 logic();
+	}
+	void logic()
+	{
+	   
+		 c=a+b;
+		 display();
+		 
+		
+	}
+	void display()
+	{
+	
+		System.out.println("the output is"+c);
+	}
+}		
+		
+public  class Main
+{
+	public static void main(String grgs[])throws Exception
+	{
+	    
+		add n=new add();
+		n.input();
+	
+		
+	}
+}
+the output is
