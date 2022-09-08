@@ -1,0 +1,34 @@
+import java.io.*;
+class hello
+{
+    int first=0;
+    int sec=1,th,n;
+    void input() throws Exception
+    {
+        DataInputStream d=new DataInputStream(System.in);
+		System.out.println("enter the pattern value");
+		n=Integer.parseInt(d.readLine());
+		logic();
+    }
+    void logic(){
+      for(int i=0;i<=n;i++)
+		  {
+		    th=first+sec;
+		   
+		    first=sec;
+		    sec=th;
+		    System.out.println(""+th);
+		    
+		  }
+
+    }
+}
+public class Main
+{
+    public static void main (String[] args) throws Exception
+    {
+    
+       hello a=new hello();
+       a.input();
+    }
+}
