@@ -1,0 +1,31 @@
+import java.io.*;
+class float1{
+    float a,b,c;
+    void logic (){
+         c=a*b;
+        display();
+        
+    }
+    void input() throws Exception{
+        DataInputStream d= new DataInputStream(System.in);
+	    System.out.println("enter the value a");
+	     a= Float.parseFloat(d.readLine());
+	    System.out.println("enter the value b");
+	     b= Float.parseFloat(d.readLine());
+	   logic();
+        
+    }
+    void display(){
+         System.out.println("enter your floating point"+c);
+        
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+	    float1 a=new float1();
+	    a.input();
+	}
+}
+	   
