@@ -1,0 +1,9 @@
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+	   char a='A';
+	   int s=a;
+	   System.out.println("the display is" +a+ "the display of"+s);
+	}
+}
