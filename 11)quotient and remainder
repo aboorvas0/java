@@ -1,0 +1,39 @@
+
+import java.io.*;
+class divided{
+    int a,b,q,r;
+    void input() throws Exception{
+        DataInputStream d= new DataInputStream(System.in);
+		System.out.println("enter the a");
+
+		a=Integer.parseInt(d.readLine());
+		System.out.println("enter the b");
+
+		b=Integer.parseInt(d.readLine());
+		quotient();
+		
+	
+    }
+    void display(){
+        System.out.println("the a is"+q);
+		System.out.println("the a is"+r);
+    }
+    void quotient(){
+        	 q=a/b;
+        	remainder();
+    }
+    void remainder(){
+         r=a%b;
+         display();
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args) throws Exception {
+		divided a=new divided();
+		a.input();
+
+		
+	}
+}
