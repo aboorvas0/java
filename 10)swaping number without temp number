@@ -1,0 +1,22 @@
+
+
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws Exception {
+		DataInputStream d= new DataInputStream(System.in);
+		System.out.println("enter the a");
+
+		int a=Integer.parseInt(d.readLine());
+		System.out.println("enter the b");
+
+		int b=Integer.parseInt(d.readLine());
+	
+		a=a-b;
+		b=a+b;
+		a=b-a;
+		System.out.println("the a is"+a);
+		System.out.println("the a is"+b);
+	
+	}
+}
