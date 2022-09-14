@@ -1,0 +1,30 @@
+ class hello{
+    char ch;
+    void input(char ch){
+        
+        this.ch=ch;
+        switch (ch) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println(ch + " is vowel");
+                break;
+            default:
+                System.out.println(ch + " is consonant");
+        }
+    }
+}
+   
+public class Main
+{
+	public static void main(String[] args) {
+	
+	hello a=new hello();
+	a.input('a');
+	a.input('e');
+	
+	
+	}
+}
