@@ -1,0 +1,26 @@
+class hello{
+    int a,b,c;
+    void input(int a,int b,int c){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+        if(a>=b && a>=c)  
+             System.out.println(a+" is the largest Number");
+        else if (b>=a && b>=c)  
+              System.out.println(b+" is the largest Number");
+        else
+              
+                System.out.println(c+" is the largest Number");
+    }
+}
+   
+public class Main
+{
+	public static void main(String[] args) {
+	
+	hello a=new hello();
+	a.input(10,20,30);
+
+	
+	}
+}
