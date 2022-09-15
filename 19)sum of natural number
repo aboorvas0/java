@@ -1,0 +1,33 @@
+import java.io.*;
+class positive{
+    int s=0;
+    int n,i;
+    void input() throws Exception
+    {
+        DataInputStream d = new DataInputStream(System.in);
+        System.out.println("enter the natural value");
+        n=Integer.parseInt(d.readLine());
+        cal();
+    }
+    void cal(){
+        for( i=1;i<=n;i++)
+        {
+           
+            s+=i;
+            display();
+        }
+    }
+    void display(){
+         System.out.println(""+i);
+        System.out.println("the sum natural value is"+s);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+		positive a= new positive();
+		a.input();
+		
+
+	}
+}
