@@ -1,0 +1,20 @@
+class positive{
+    int pos;
+    void negative(int pos){
+        this.pos=pos;
+        if(pos>0)
+            System.out.println(pos+"is the positive value");
+        else if(pos<0)
+            System.out.println(pos+"is the negative value");
+        else
+            System.out.println(pos+"is the number");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		positive a= new positive();
+		a.negative(22);
+		a.negative(-33);
+	}
+}
