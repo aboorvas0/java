@@ -1,0 +1,19 @@
+class positive{
+    char al;
+    void alphabet(char al){
+        this.al=al;
+        
+        if( (al >= 'a' && al <= 'z') || (al >= 'A' && al <= 'Z'))
+            System.out.println(al + " is an alphabet.");
+        else
+            System.out.println(al + " is not an alphabet.");
+    }    
+}
+public class Main
+{
+	public static void main(String[] args) {
+		positive a= new positive();
+		a.alphabet('a');
+		a.alphabet('A');
+	}
+}
