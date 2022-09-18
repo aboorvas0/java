@@ -1,0 +1,32 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+************************************************************************/
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args)throws Exception{
+		DataInputStream d =new DataInputStream(System.in);
+		System.out.println("enter the palindrome value");
+		int n=Integer.parseInt(d.readLine());
+		int r;
+		int copy=n;
+		int s=0;
+		while(n>0){
+		    r=n%10;
+		    s=s*10+r;
+		    n=n/10;
+		    
+	    
+		}
+		 System.out.println(""+s);
+		 if(copy==s)
+		    System.out.println("palindrome");
+		 else 
+		    System.out.println("not a palindrome");
+	}
+}
