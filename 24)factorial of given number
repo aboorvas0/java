@@ -1,0 +1,20 @@
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws Exception {
+		DataInputStream d =new DataInputStream(System.in);
+		System.out.println("Enter your value");
+		int n=Integer.parseInt(d.readLine());
+		int f=1;
+		System.out.println("one by one factorial");
+		for(int i=1;i<=n;i++)
+		{
+		    f*=i;
+		   
+		    System.out.println(f+ "is the factorial");
+		}
+	
+		System.out.println("the total factorial is" +f);
+		
+	}
+}
