@@ -1,0 +1,38 @@
+import java.io.*;
+class armstrong{
+    int n;
+    int r;
+    int s=0;
+    int copy;
+    void input(int n){
+        this.n=n;
+        this.n=n;
+        copy=n;
+		
+		do{
+		    r=n%10;
+		    s=s+r*r*r;
+		    n=n/10;
+		    
+	    
+		}while(n>0);
+		 System.out.println(""+s);
+		 display();
+    }
+    void display(){
+		      if(copy==s)
+		    System.out.println("Armstrong ");
+		 else 
+		    System.out.println("not a Armstrong");
+        
+		 }
+		 
+}
+        
+public class Main
+{
+	public static void main(String[] args)throws Exception{
+	    armstrong a =new armstrong();
+	    a.input(153);
+	}
+}
