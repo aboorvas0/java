@@ -1,0 +1,25 @@
+import java.io.*;
+class exponient{
+    void cal(int fac)
+    {
+       for(int i=1;i<=fac;i++)
+       {
+           if(fac%i==0)
+           {
+               System.out.println("the "+fac+"is factor of" +i);
+           }
+       }
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+	DataInputStream d=new DataInputStream(System.in);
+	System.out.println("enter the factor");
+	int fac=Integer.parseInt(d.readLine());
+	
+	exponient a=new exponient();
+	a.cal(fac);
+	}
+}
