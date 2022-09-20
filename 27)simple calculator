@@ -1,0 +1,41 @@
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+	DataInputStream d=new DataInputStream(System.in);
+	System.out.println("enter the value");
+	int a=Integer.parseInt(d.readLine());
+	System.out.println("enter the value");
+	int b=Integer.parseInt(d.readLine());
+	System.out.println("enter the operator");
+	char  op=d.readLine().charAt(0);
+	int result;
+	 switch (op) {
+
+      
+      case '+':
+        result = a + b;
+        System.out.println(a + " + " + b + " = " + result);
+        break;
+    case '-':
+        result = a - b;
+        System.out.println(a + " + " + b + " = " + result);
+        break;
+    case '*':
+        result = a * b;
+        System.out.println(a + " + " + b + " = " + result);
+        break;
+    case '/':
+        result = a / b;
+        System.out.println(a + " + " + b + " = " + result);
+        break;
+    default:
+        System.out.println("your operator is  invalid");
+	 }
+	
+	
+	
+	
+
+	}
+}
