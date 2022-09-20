@@ -1,0 +1,25 @@
+import java.io.*;
+class exponient{
+    void cal(int base,int ex)
+    {
+        int pow=1;
+        for(int i=1;i<=ex;i++)
+        {
+            pow=pow*base;
+        }
+        System.out.println(base+ "to the power"+ex+"is:"+pow);
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+	DataInputStream d=new DataInputStream(System.in);
+	System.out.println("enter the base");
+	int base=Integer.parseInt(d.readLine());
+	System.out.println("enter the exponient");
+	int ex=Integer.parseInt(d.readLine());
+	exponient a=new exponient();
+	a.cal(base,ex);
+	}
+}
