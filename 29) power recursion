@@ -1,0 +1,30 @@
+*******************************************************************************/
+import java.io.*;
+class power{
+    static int n;
+    static int p;
+    static int pow;
+    static void  number( int n,  int p)
+    {
+        int pow = 1;
+        for (int i = 1; i <= p; i++)
+            pow *= n;
+        System.out.println(""+pow);
+	 
+    }
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+	 DataInputStream d=new DataInputStream(System.in);
+	 System.out.println("enter the value");
+	 int n=Integer.parseInt(d.readLine());
+	 System.out.println("enter the power");
+	 int p=Integer.parseInt(d.readLine());
+	 power.number(n,p);
+	
+	 
+	}
+}
