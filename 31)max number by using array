@@ -1,0 +1,27 @@
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+	 int a[]=new int[5];
+	
+	 DataInputStream d=new DataInputStream(System.in);
+	 System.out.println("enter the value");
+	 int n=Integer.parseInt(d.readLine());
+	 System.out.println("enter the array value");
+	 for(int i=0;i<n;i++)
+	 {
+	     a[i]=Integer.parseInt(d.readLine());
+	 }
+	 int max=a[0];
+	 for(int i=1; i < n ; i++)
+	 {
+	    if(a[i]>max)
+	    {
+	        max=a[i];
+	    }             
+	     
+	 }
+	 System.out.println("the largest number is" +max);
+	 
+	}
+}
