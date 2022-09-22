@@ -1,0 +1,35 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+import java.io.*;
+class Main
+{
+	public static void main(String args[])throws Exception
+	{
+		DataInputStream d=new DataInputStream(System.in);
+		System.out.println("enter the starting value");
+		int start=Integer.parseInt(d.readLine());
+		System.out.println("enter the ending  value");
+		int end=Integer.parseInt(d.readLine());
+		for(int i=start;i<=end;i++)
+		{
+			int n=i;
+			int s=0;
+			int r;
+			while(n>0)
+			{	
+				r=n%10;
+				s=s+(r*r*r);
+				n=n/10;
+			}
+		    if(s==i){
+		        System.out.println(""+s);
+		    }
+		}
+	}
+}
