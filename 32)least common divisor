@@ -1,0 +1,46 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+import java.io.*;
+class Main
+{
+
+	static int a;
+	static int b;
+	static int g=0;
+	static void  gcd(int a,int b)
+	{
+		for(int i=1;i<=a;i++)
+		{
+		
+			if((a%i==0) &&(b%i==0))
+			{
+				
+				g=i;
+			}
+		
+		}
+		System.out.println("the greatest common divisor is"+g);
+		int lcm=(a*b)/g;
+		System.out.println("the lcm is"+lcm);
+	}
+
+	
+	public static void main(String args[]) throws Exception
+	{
+		DataInputStream d=new DataInputStream(System.in);
+		System.out.println("enter the a value");
+		a=Integer.parseInt(d.readLine());
+		System.out.println("enter the a value");
+		b=Integer.parseInt(d.readLine());
+		gcd(a,b);
+	}
+}
+		
+		
+
