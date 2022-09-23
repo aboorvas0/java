@@ -1,0 +1,45 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+import java.io.*;
+import java.lang.Math;
+class abu{
+    int octal=0;
+    int r;
+    int decimal=0;
+    
+    void cal(long binary){
+        int i=0;
+        while(binary!=0){
+            r=(int)binary%10;
+            decimal=decimal+r*(int)Math.pow(2,i);
+            i++;
+            binary=binary/10;
+          
+        }
+        System.out.println("The decimal value is "+decimal);
+        int g=1;
+        while(decimal!=0){
+            r=decimal%8;
+            octal=octal+r*g;
+            g=g*10;
+            decimal=decimal/8;
+        }
+        System.out.println("the binary value is"+octal);
+    }
+}
+public class Main
+{
+	public static void main(String[] args)throws Exception {
+	abu n=new abu();
+	DataInputStream d=new DataInputStream(System.in);
+	System.out.println("enter the binary");
+	long  binary=Integer.parseInt(d.readLine());
+	n.cal(binary);
+	}
+}
