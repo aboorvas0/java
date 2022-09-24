@@ -1,0 +1,19 @@
+import java.io.*;
+public class Main
+{
+	
+	static int natural(int number)
+	{
+	    if(number==0)
+	        return 0;
+	    return number+natural(number-1);
+	}
+	
+	public static void main(String[] args) throws Exception{
+	    DataInputStream d=new DataInputStream(System.in);
+	    System.out.println("enter the value");
+	    int number=Integer.parseInt(d.readLine());
+	    System.out.println("the value"+ natural(number));
+	    
+	}
+}
