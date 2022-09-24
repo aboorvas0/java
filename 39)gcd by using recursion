@@ -1,0 +1,21 @@
+import java.io.*;
+public class Main
+{
+	
+	static int gcd(int n1 , int n2)
+	{
+	    if(n2==0)
+	        return n1;
+	    return gcd(n2,n1%n2);
+	}
+	
+	public static void main(String[] args) throws Exception{
+	    DataInputStream d=new DataInputStream(System.in);
+	    System.out.println("enter the n1 value");
+	    int n1=Integer.parseInt(d.readLine());
+	    System.out.println("enter the n2 value");
+	    int n2=Integer.parseInt(d.readLine());
+	    System.out.println("the value"+ gcd(n1,n2));
+	    
+	}
+}
