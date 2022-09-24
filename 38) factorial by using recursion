@@ -1,0 +1,19 @@
+import java.io.*;
+public class Main
+{
+	
+	static int factorial(int f)
+	{
+	    if(f<=1)
+	        return 1;
+	    return f*factorial(f-1);
+	}
+	
+	public static void main(String[] args) throws Exception{
+	    DataInputStream d=new DataInputStream(System.in);
+	    System.out.println("enter the value");
+	    int f=Integer.parseInt(d.readLine());
+	    System.out.println("the value"+ factorial(f));
+	    
+	}
+}
