@@ -1,0 +1,24 @@
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+		int a[]=new int[10];
+		DataInputStream d=new DataInputStream(System.in);
+		System.out.println("enter the n value");
+		int n=Integer.parseInt(d.readLine());
+		System.out.println("enter the value one by one:");
+		for(int i=0;i<n;i++)
+		{
+		    a[i]=Integer.parseInt(d.readLine());
+		    
+		}
+		int sum=0;
+		for(int i=0;i<n;i++)
+		{
+		    sum=sum+a[i];
+		}
+		System.out.println("sum value"+sum);
+		double average=sum/n;
+		System.out.println("the average is"+average);
+	}
+}
