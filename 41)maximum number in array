@@ -1,0 +1,24 @@
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+		int a[]=new int[10];
+		DataInputStream d=new DataInputStream(System.in);
+		System.out.println("enter the n value");
+		int n=Integer.parseInt(d.readLine());
+		System.out.println("enter the value one by one:");
+		for(int i=0;i<n;i++)
+		{
+		    a[i]=Integer.parseInt(d.readLine());
+		    
+		}
+	    int max=a[0];
+	    for(int i=1;i<n;i++)
+	    {
+	        if(max<a[i])
+	            max=a[i];
+	    }
+	    System.out.println("the maximum value is"+max);
+	    
+	}
+}
