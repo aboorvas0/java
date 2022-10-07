@@ -1,0 +1,29 @@
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws Exception {
+	    int a[]=new int[20];
+    DataInputStream d=new DataInputStream(System.in);
+    
+   System.out.println("enter the n value");
+   int n=Integer.parseInt(d.readLine());
+   System.out.println("enter the array value");
+    for(int i=0;i<n;i++)
+    {
+       a[i]=Integer.parseInt(d.readLine());
+    }
+    System.out.println("enter your insert value");
+    int num=Integer.parseInt(d.readLine());
+    for(int i=n-1;i>=0;i--)
+    {
+        a[i+1]=a[i];
+    }
+    a[0]=num;
+    n++;
+    
+    for( int i=0;i<n;i++)
+    {
+        System.out.println(""+a[i]);
+    }
+	}
+}
