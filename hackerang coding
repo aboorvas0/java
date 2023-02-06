@@ -1,0 +1,147 @@
+1)
+
+import java.util.*;
+import java.io.*;
+
+
+class Solution{
+    public static void main(String []argh)
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        int t=sc.nextInt();
+
+        for(int i=0;i<t;i++)
+        {
+            try
+            {
+                long x=sc.nextLong();
+                if(x > Long.MAX_VALUE || x < Long.MIN_VALUE){
+                    System.out.println(x+" can't be fitted anywhere.");
+                }
+                else{
+                    System.out.println(x+" can be fitted in:");
+                
+                    if(x>=-128 && x<=127){
+                        System.out.println("* byte");
+                    }
+                    if (x>= -32768 && x <= 32767){
+                        System.out.println("* short");
+                    }
+                    if(x>=-2147483648 && x<=2147483647){
+                        System.out.println("* int");
+                    }
+                    if(x>=Long.MIN_VALUE && x<=Long.MAX_VALUE){
+                        System.out.println("* long");
+                    }
+                }
+            
+            }
+            catch(Exception e)
+            {
+                System.out.println(sc.next()+" can't be fitted anywhere.");
+            }
+
+        }
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------
+
+5
+-150
+150000
+1500000000
+213333333333333333333333333333333333
+-100000000000000
+------------------------------------------------------------------------------------------------------------------------
+-150 can be fitted in:
+* short
+* int
+* long
+150000 can be fitted in:
+* int
+* long
+1500000000 can be fitted in:
+* int
+* long
+213333333333333333333333333333333333 can't be fitted anywhere.
+-100000000000000 can be fitted in:
+* long
+-----------------------------------------------------------------------------------------------------------------------------
+2)
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int i=1;
+        while(s.hasNext()){ // it will find the string is true or false
+            String m=s.nextLine();//it will  goes to next line
+            System.out.println( i+" "+m);
+            i++;
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+Hello world
+I am a file
+Read me until end-of-file.
+
+
+-----------------------------------
+1 Hello world
+2 I am a file
+3 Read me until end-of-file.
+-------------------------------------------------------------------------
+
+
+3)
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+ 
+public class Solution {
+static Scanner scan=new Scanner(System.in);
+ 
+static int B = scan.nextInt();
+static int H = scan.nextInt();
+static boolean flag=true;
+static
+{
+    if(B<0 || H<0)
+    {
+        flag=false;
+        System.out.println("java.lang.Exception: Breadth and height must be positive");
+        System.exit(0);
+    }
+}
+public static void main(String[] args){
+        if(flag){
+            int area=B*H;
+            System.out.print(area);
+        }
+         
+    }//end of main
+ 
+}//end of class
+
+-------------------------------------------------------------------------------------------------
+-1 input
+2-
+-----------------------
+java.lang.Exception: Breadth and height must be positive  (output)
+-------------------------------------------------
+
+
+
+
